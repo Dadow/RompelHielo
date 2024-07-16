@@ -450,6 +450,70 @@ footer .copyright-txt {
     font-family: "Rajdhani", sans-serif;
     
 }
+.band_container_left {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.band_container_left:before {
+    content: '';
+    position: absolute;
+    left: -15%;
+    width: 150vw;
+    height: 100vh;
+    background-color: white;
+    top: 15vh;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.band_container_left .band_left {
+    transform: rotate(5deg);
+    background-color: #FF5722;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    position: relative;
+    top: 30%;
+    width: 103%;
+    left: -1%;
+}
+
+.band_container_left .band_left .band_text_container {
+    animation: anim-band-left 65s infinite linear;
+    backface-visibility: hidden;
+    max-height: 100px;
+    height: 100px;
+    position: relative;
+    transform: rotate(355deg);
+    left: -2000px;
+}
+
+.band_container_left .band_left .band_text_container span {
+    z-index: 55 !important;
+    font-size: 70px;
+    font-weight: 900;
+    margin-top: 20px;
+    display: table-cell;
+    overflow: hidden;
+    white-space: nowrap;
+    background-image: url(
+        https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXhjZ2RjM2YzdHVqYWR2cWU2bHY5dGI5eHgzbG1ma2EydDZzajdweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YPDWObqlETLoTgE7pJ/giphy.webp
+    );
+    filter: brightness(1.5);
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif;
+    
+}
 
 
 
@@ -641,6 +705,17 @@ footer .copyright-txt {
 
     100% {
         transform: translateX(1117px) translateY(0px);
+    }
+
+}
+@keyframes anim-band-left {
+    0% {
+        transform: translateX(0px) translateY(0px);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        transform: translateX(-1117px) translateY(0px);
     }
 
 }
