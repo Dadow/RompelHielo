@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Electrolize", sans-serif;
+}
+
+/* HEADER */
+header {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    font-family: "Electrolize", sans-serif;
+}
+
+header .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #eee;
+}
+
+header .rh-logo-box {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header .rh-logo {
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0 100%);
+    background: #fff;
+    width: 150px;
+    padding: 10px;
+    border-bottom: 3px solid #f1f1f1;
+    z-index: 999;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+}
+
+header .container-rh-logo {
+    position: absolute;
+    top: 65%;
+    left: 34%;
+    transform: translate(-50%, -50%) rotateX(331deg) rotateY(45deg);
+    transform-style: preserve-3d;
+}
+
+header .container-rh-logo #rh-3d-logo {
+    position: relative;
+    left: 22.5px;
+    padding-bottom: 11.25px;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    user-select: none;
+}
+
+header .container-rh-logo #rh-3d-logo .side {
+    position: absolute;
+    width: 45px;
+
+    background: rgba(255, 108, 38, 1);
+    border: 3px solid white;
+}
+
+header .container-rh-logo #rh-3d-logo .front {
+    transform: translateZ(21.5px);
+    height: 40px;
+}
+
+header .container-rh-logo #rh-3d-logo .back {
+    transform: rotateY(180deg) translateZ(21.5px);
+    height: 40px;
+}
+
+header .container-rh-logo #rh-3d-logo .left {
+    transform: rotateY(-90deg) translateZ(21.5px);
+    background: url("../img/cara2.png");
+    background-size: cover;
+    height: 40px;
+}
+
+header .container-rh-logo #rh-3d-logo .right {
+    transform: rotateY(90deg) translateZ(21.5px);
+    height: 40px;
+}
+
+header .container-rh-logo #rh-3d-logo .top {
+    transform: rotateX(90deg) translateZ(21.5px);
+    background: url("../img/cara1.png");
+    background-size: cover;
+    height: 45px;
+}
+
+header .container-rh-logo #rh-3d-logo .bottom {
+    transform: rotateX(-90deg) translateZ(17.5px);
+    height: 45px;
+}
+
+header .container-rh-logo #rh-3d-logo.animate {
+    animation: 1s spin ease-in;
+}
+
+
+header .rh-current-page {
+    font-weight: 600;
+}
+
+
+header .navbar-collapse {
+    width: 95vw;
+    background: #ff6c26;
+    padding-left: 205px;
+    border-bottom: 3px solid #ff5000;
+}
+
+header .dropdown-menu {
+    background: #ffb482;
+    border: none;
+}
+
+header .dropdown-menu.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+header .rh-join {
+    font-family: "Rajdhani", sans-serif;
+    FONT-SIZE: 19px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+header .dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: #FF6C26;
+    transform: skew(0deg);
+    box-shadow: 0px 0px 1px #FF6C26;
+}
+
+header .dropdown-item {
+    font-weight: 100;
+}
+
+header .dropdown-item p {
+    color: #000000b8;
+    margin-bottom: 0;
+}
+
+
+
+header .dropdown-toggle::after {
+    transition: transform 0.15s linear;
+}
+
+header .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+header .navbar-toggler {
+    margin-bottom: 20px;
+    margin-left: calc(50% - -60px);
+    border-color: white;
+    border-width: 2px
+}
+
+header .navbar-toggler span {
+    filter: brightness(20);
+}
+
+header .nav-link {
+    text-shadow: 0px 0px 5px #ff0202;
+}
+
+
+header .nav-link,
+.nav-link:focus {
+    color: white !important;
+
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    border-top: 8px solid transparent;
+    background-color: #EEEEEE;
+    border-image: 30 repeating-linear-gradient(66deg, #eeeeee 11%, #ff6c26 100%);
+}
+
+footer .link-secondary:hover,
+footer h5 {
+    color: #FF6C26 !important;
+}
+
+footer .social-icons {
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer .social-icons a {
+    width: 55px;
+    height: 55px;
+    font-size: x-large;
+    line-height: 55px;
+    margin: 0 30px 30px 0;
+    padding: 0;
+    color: #ff6c26;
+    /* #646464; */
+    display: inline-block;
+    background-color: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #ff6c26;
+}
+
+footer .social-icons a:before {
+    display: inline-block;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+footer .social-icons a:hover {
+    background-color: #ec4613;
+    color: #fff;
+}
+
+footer .copyright-txt {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* whatever */
+.product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    transform: rotate(30deg);
+}
+
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+}
+
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+
+}
+
+
+
+/* rh-home */
+
+#rh-home #carouselExampleCaptions .carousel-inner {
+    height: 0;
+    padding-bottom: 86vh;
+    /* this sets carousel aspect ratio (4:1 here) */
+}
+
+#rh-home #carouselExampleCaptions .carousel-item {
+    position: absolute !important;
+    /* Bootstrap is insistent */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#rh-home #carouselExampleCaptions .carousel-item {
+    transition: transform 1s ease-in-out;
+}
+
+#rh-home #carouselExampleCaptions .carousel-fade .active.carousel-item-start,
+#rh-home #carouselExampleCaptions .carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 5s;
+}
+
+#rh-home #carouselExampleCaptions .carousel-item img {
+    height: 100%;
+    /* Bootstrap handles width already */
+    object-fit: cover;
+    /* or 'contain' if you want stretch instead of crop */
+}
+
+#rh-home #carouselExampleCaptions .carousel-control-prev-icon {
+    background-position-x: 40%;
+}
+
+#rh-home #carouselExampleCaptions .carousel-control-next-icon {
+    background-position-x: 60%;
+}
+
+#rh-home #carouselExampleCaptions .carousel-control-next-icon,
+#rh-home #carouselExampleCaptions .carousel-control-prev-icon {
+    background-color: #ff6c26;
+    height: 5vh;
+    padding: 20px;
+    border-radius: 15%;
+    background-size: 70% !important;
+}
+
+#rh-home #carouselExampleCaptions .carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 60px;
+    height: 6px;
+    border: none;
+    border-radius: 24px;
+}
+
+#rh-home #carouselExampleCaptions .carousel-indicators [data-bs-target] span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #FF5000;
+    border-radius: inherit;
+}
+
+#rh-home #rh-welcome-banner {
+    background-image: url(../img/back.jpg);
+}
+
+#rh-home #rh-welcome-banner div {
+    color: white;
+}
+
+
+#rh-home #carouselExampleCaption2 .carousel-item img {
+    height: 15vh;
+    object-fit: fill;
+}
+
+#rh-home #carouselExampleCaption2 .carousel-indicators {
+    bottom: -45px;
+}
+
+#rh-home #carouselExampleCaption2 .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+
+.animate {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+#sectionFourCards {
+    background: black;
+    padding-bottom: 76px;
+}
+
+#carouselExampleCaption2 .carousel-indicators [data-bs-target] {
+    background-color: #FF5722 !important;
+}
+
+.band_container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.band_container:before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    width: 150vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    top: 10vh;
+    -webkit-transform: rotate(355deg);
+    -moz-transform: rotate(355deg);
+    transform: rotate(355deg);
+}
+
+.band_container .band_right {
+    transform: rotate(355deg);
+    background-color: #FF5722;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    position: relative;
+    top: 30%;
+    width: 103%;
+    left: -1%;
+}
+
+.band_container .band_right .band_text_container {
+    animation: anim-band-right 65s infinite linear;
+    backface-visibility: hidden;
+    max-height: 100px;
+    height: 100px;
+    position: relative;
+    transform: rotate(355deg);
+    left: -2000px;
+}
+
+.band_container .band_right .band_text_container span {
+    z-index: 55 !important;
+    font-size: 70px;
+    font-weight: 900;
+    margin-top: 20px;
+    display: table-cell;
+    overflow: hidden;
+    white-space: nowrap;
+    background-image: url(
+        https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXhjZ2RjM2YzdHVqYWR2cWU2bHY5dGI5eHgzbG1ma2EydDZzajdweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YPDWObqlETLoTgE7pJ/giphy.webp
+    );
+    filter: brightness(1.5);
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 990px) and (orientation: landscape) {
+
+    header .navbar-collapse {
+        width: 95vw;
+        height: 85vh;
+        overflow: scroll;
+    }
+}
+
+/* MIN */
+@media (min-width: 200px) {
+    .card-group {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    .card-group {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 20px;
+    }
+
+    .card-group>.card {
+        flex: 40%;
+        margin: 2% 2% 0 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-group>.card {
+        flex: 1 0 0%;
+        margin-bottom: 0;
+        margin: 2% 0% 0 0;
+    }
+
+    .card-group>.card:not(:last-child) {
+        margin: 2% 2% 0 0;
+
+    }
+
+    .flex-md-equal>* {
+        flex: 1;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* GENERAL SETTINGS */
+    header .dropdown-item:focus,
+    .dropdown-item:hover {
+        background-color: #FF6C26;
+        transform: skew(0deg);
+        box-shadow: 0px 0px 1px #FF6C26;
+    }
+
+    header .dropdown-item:focus p,
+    .dropdown-item:hover p {
+        color: white;
+        background-color: #FF6C26;
+        transform: skew(0deg);
+    }
+
+    header .dropdown-item p {
+        margin-bottom: 0;
+        text-shadow: 0 0 black;
+    }
+
+    header .dropdown-item p {
+        color: #000000b8;
+        margin-bottom: 0;
+        transform: skew(10deg) scale3d(1, 1, 1);
+    }
+
+    header .rh-logo-box {
+        padding: 0 0;
+        background: #eee;
+    }
+
+    header .rh-navbar-collapse {
+        margin-top: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        left: -35%;
+        transform: skew(-10deg);
+        border-radius: 0;
+        z-index: -1;
+        margin-top: 15px;
+        border-radius: 0px 0px 1px 1px;
+    }
+
+
+
+}
+
+/* MAX */
+@media (max-width: 991px) {
+
+    /* HEADER */
+    header .rh-logo-box {
+        padding: 15px 0 0;
+        background: #ff6c26;
+        box-shadow: 1px -17px 0px -14px #ff5000 inset;
+    }
+
+    header .rh-logo img {
+        width: 55px;
+        position: relative;
+        left: 20px;
+        top: 0px;
+    }
+
+    header .dropdown-menu.show {
+        width: 95%;
+    }
+
+    header .navbar-toggler:focus {
+        box-shadow: 0px 0px 0px 3px #FF5000;
+    }
+}
+
+#animated-number {
+    padding: 100px 0 70px;
+    background: #132125 url(/assets/img/bg.jpg) no-repeat 0 0;
+    background-size: cover;
+    color: #fff;
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+#animated-number h1,
+#animated-number h2,
+#animated-number h3,
+#animated-number h4 {
+    color: #fff;
+}
+
+.section-header .section-title {
+    font-size: 44px;
+    color: #272727;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+}
+
+.animated-number {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    font-size: 24px;
+    line-height: 140px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+#animated-number strong {
+    display: block;
+    margin-bottom: 30px;
+}
+
+@keyframes anim-band-right {
+    0% {
+        transform: translateX(0px) translateY(0px);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        transform: translateX(1117px) translateY(0px);
+    }
+
+}
+
+/* KEYFRAMES */
+@keyframes slideIn {
+    0% {
+        top: -300%;
+    }
+
+    100% {
+        top: 95%;
+    }
+
+    0% {
+        top: -300%;
+    }
+}
+
+@keyframes spin {
+    12.5% {
+        transform: rotateY(14deg);
+    }
+
+    25% {
+        transform: rotateY(-12deg);
+    }
+
+    37.5% {
+        transform: rotateY(10deg);
+    }
+
+    50% {
+        transform: rotateY(-8deg);
+    }
+
+    62.5% {
+        transform: rotateY(6deg);
+    }
+
+    75% {
+        transform: rotateY(-4deg);
+    }
+
+    87.5% {
+        transform: rotateY(2deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
