@@ -349,6 +349,9 @@ footer .copyright-txt {
 
 #rh-home #rh-welcome-banner {
     background-image: url(../img/back.jpg);
+    margin-top: -150px;
+    z-index: 999;
+    position: relative;
 
 }
 
@@ -371,6 +374,76 @@ footer .copyright-txt {
     height: 10px;
     border-radius: 100%;
 }
+#rh-home #rh-description{
+    padding: 10vh 0 5vh;
+}
+#rh-home #rh-description span {
+    font-size: 4vh;
+    width: 75%;
+    padding: 5vh;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 5px 5px 25px -2px;
+}
+
+
+#rh-description svg {
+    animation: fadeInQuote 2s;
+  }
+  
+  @keyframes fadeInQuote {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #rh-description svg:first-child {
+    animation: top-quote 2s infinite;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+  }
+  #rh-description svg:nth-child(2) {
+    animation: bottom-quote 2s infinite;
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+  }
+  
+  @keyframes top-quote {
+    0% {
+      transform: translate(50px, 80px);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(50px, 0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  @keyframes bottom-quote {
+    0% {
+      transform: translate(-50px, -80px);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(-50px, 0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+
+
+
 
 
 .animate {
@@ -386,6 +459,49 @@ footer .copyright-txt {
 #carouselExampleCaption2 .carousel-indicators [data-bs-target] {
     background-color: #FF5722 !important;
 }
+
+#sectionFourCards .card {
+    place-content: center;
+    color: white;
+    text-shadow: 0 1px 0 #000;
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #313,
+        #112 5%,
+        #112 60%,
+        #313 95%
+      );
+    border: solid 5px transparent;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #FF5722, #f03 99%, transparent);
+    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+    background-position: center center;
+    -webkit-animation: bg-spin 3s linear infinite;
+            animation: bg-spin 3s linear infinite;
+  }
+  @-webkit-keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  #sectionFourCards .card:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+
+
+
 
 .band_container {
     position: relative;
@@ -465,8 +581,7 @@ footer .copyright-txt {
     left: -15%;
     width: 150vw;
     height: 100vh;
-    background-color: white;
-    top: 15vh;
+    background-color: black;
     -webkit-transform: rotate(5deg);
     -moz-transform: rotate(5deg);
     transform: rotate(5deg);
@@ -482,6 +597,7 @@ footer .copyright-txt {
     top: 30%;
     width: 103%;
     left: -1%;
+    z-index: 1000;
 }
 
 .band_container_left .band_left .band_text_container {
@@ -517,7 +633,7 @@ footer .copyright-txt {
 }
 .band_container_center{
     position: relative;
-    margin-top: -56px;
+    margin-bottom: -56px;
     width: 100%;
     overflow: hidden;
     z-index: 999999;
