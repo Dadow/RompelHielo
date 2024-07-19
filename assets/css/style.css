@@ -18,6 +18,7 @@ main {
     max-width: 2000px;
     background: var(--white);
     margin: auto;
+    position: relative;
 }
 
 #cb-cookie-banner {
@@ -876,147 +877,6 @@ section#sectionFourCards .carousel-control-prev-icon {
 
 
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 990px) and (orientation: landscape) {
-
-    header .navbar-collapse {
-        width: 95vw;
-        height: 85vh;
-        overflow: scroll;
-    }
-}
-
-/* MIN */
-@media (min-width: 200px) {
-    .card-group {
-        padding: 0 20px;
-    }
-}
-
-@media (min-width: 576px) {
-    #rh-home #rh-description span {
-        font-weight: 300;
-        font-size: 4vh;
-    }
-
-    .card-group {
-        display: flex;
-        flex-flow: row wrap;
-        padding: 0 20px;
-    }
-
-    .card-group>.card {
-        flex: 40%;
-        margin: 2% 2% 0 0;
-        margin-bottom: 0;
-        border-radius: 0;
-    }
-}
-
-@media (min-width: 768px) {
-    #rh-home #rh-welcome-banner>div>div:first-of-type {
-        margin-top: 3rem !important;
-    }
-    section#sectionFourCards:before {
-        top: -45px;
-    }
-    .card-group>.card {
-        flex: 1 0 0%;
-        margin-bottom: 0;
-        margin: 2% 0% 0 0;
-    }
-
-    .card-group>.card:not(:last-child) {
-        margin: 2% 2% 0 0;
-
-    }
-
-    .flex-md-equal>* {
-        flex: 1;
-    }
-}
-
-@media (min-width: 992px) {
-    #cb-cookie-banner .cb-cookie-icon {
-        font-size: 50px;
-        display: block;
-    }
-
-    /* GENERAL SETTINGS */
-    header .dropdown-item:focus,
-    .dropdown-item:hover {
-        background-color: #FF6C26;
-        transform: skew(0deg);
-        box-shadow: 0px 0px 1px #FF6C26;
-    }
-
-    header .dropdown-item:focus p,
-    .dropdown-item:hover p {
-        color: var(--white);
-        background-color: #FF6C26;
-        transform: skew(0deg);
-    }
-
-    header .dropdown-item p {
-        margin-bottom: 0;
-        text-shadow: 0 0 black;
-    }
-
-    header .dropdown-item p {
-        color: #000000b8;
-        margin-bottom: 0;
-        transform: skew(10deg) scale3d(1, 1, 1);
-    }
-
-    header .rh-logo-box {
-        padding: 0 0;
-        background: #eee;
-    }
-
-    header .rh-navbar-collapse {
-        margin-top: 20px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    .navbar-expand-lg .navbar-nav .dropdown-menu {
-        left: -35%;
-        transform: skew(-10deg);
-        border-radius: 0;
-        z-index: -1;
-        margin-top: 15px;
-        border-radius: 0px 0px 1px 1px;
-    }
-
-
-
-}
-
-/* MAX */
-@media (max-width: 991px) {
-
-    /* HEADER */
-    header .rh-logo-box {
-        padding: 15px 0 0;
-        background: #ff6c26;
-        box-shadow: 1px -17px 0px -14px #ff5000 inset;
-    }
-
-    header .rh-logo img {
-        width: 55px;
-        position: relative;
-        left: 20px;
-        top: 0px;
-    }
-
-    header .dropdown-menu.show {
-        width: 95%;
-    }
-
-    header .navbar-toggler:focus {
-        box-shadow: 0px 0px 0px 3px #FF5000;
-    }
-}
-
 #animated-number {
     padding: 100px 0 200px;
     background: #132125 url(/assets/img/bg.jpg) no-repeat 0 0;
@@ -1354,6 +1214,36 @@ section#sectionFourCards .carousel-control-prev-icon {
     background-size: 400px;
 }
 
+#rh-about .team-gallery .card6:hover {
+    background: url("../img/esfera/ximo.png") center top no-repeat;
+    background-size: 700px;
+    filter: grayscale(1);
+}
+#rh-about .team-gallery .card6 {
+    background: url("../img/esfera/ximo.png") center top no-repeat;
+    background-size: 400px;
+}
+
+#rh-about .team-gallery .card7:hover {
+    background: url("../img/esfera/luis.png") right top no-repeat;
+    background-size: 700px;
+    filter: grayscale(1);
+}
+#rh-about .team-gallery .card7 {
+    background: url("../img/esfera/luis.png") center top no-repeat;
+    background-size: 400px;
+}
+
+#rh-about .team-gallery .card8:hover {
+    background: url("../img/esfera/clara.png") center center no-repeat;
+    background-size: 700px;
+    filter: grayscale(1);
+}
+#rh-about .team-gallery .card8 {
+    background: url("../img/esfera/clara.png") center center no-repeat;
+    background-size: 400px;
+}
+
 #rh-about .team-gallery .card5:hover {
     background: url("../img/esfera/angel.png") center top no-repeat;
     background-size: 700px;
@@ -1382,20 +1272,20 @@ section#sectionFourCards .carousel-control-prev-icon {
 
 #rh-about .team-gallery .rh-team-title {
     bottom: 10px;
-    left: 10px;
+    left: 10%;
     position: absolute;
     color: var(--white);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: larger;
+    font-size: 3vh;
 }
 
 #rh-about .team-gallery .icons {
     position: absolute;
-    fill: #fff;
-    color: #fff;
-    height: 130px;
-    top: 226px;
-    width: 50px;
+    fill: var(--white);
+    color: var(--white);
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1617,4 +1507,172 @@ section#sectionFourCards .carousel-control-prev-icon {
 		stroke-dasharray: 50% 0;
 		stroke-width: 0;
 	}
+}
+
+
+#rh-roadmap .rh-section-header svg text,
+#rh-faq .rh-section-header svg text {
+    font-size: 100px;
+}
+
+#rh-roadmap section:first-of-type{
+    padding-top: 230px;
+}
+
+
+
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 990px) and (orientation: landscape) {
+
+    header .navbar-collapse {
+        width: 95vw;
+        height: 85vh;
+        overflow: scroll;
+    }
+}
+
+/* MIN */
+@media (min-width: 200px) {
+    .card-group {
+        padding: 0 20px;
+    }
+    #rh-about span.text-with-bg {
+        width: 100%;
+        padding: 2% 3%;
+    }
+}
+
+@media (min-width: 576px) {
+    #rh-home #rh-description span {
+        font-weight: 300;
+        font-size: 4vh;
+    }
+
+    .card-group {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 20px;
+    }
+
+    .card-group>.card {
+        flex: 40%;
+        margin: 2% 2% 0 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    #rh-about .team-gallery .rh-team-title {
+        left: 10px;
+        font-size: large;
+    }
+}
+
+@media (min-width: 768px) {
+    #rh-home #rh-welcome-banner>div>div:first-of-type {
+        margin-top: 3rem !important;
+    }
+    section#sectionFourCards:before {
+        top: -45px;
+    }
+    .card-group>.card {
+        flex: 1 0 0%;
+        margin-bottom: 0;
+        margin: 2% 0% 0 0;
+    }
+
+    .card-group>.card:not(:last-child) {
+        margin: 2% 2% 0 0;
+
+    }
+
+    .flex-md-equal>* {
+        flex: 1;
+    }
+    #rh-about span.text-with-bg {
+        background: #ffffffad;
+        width: 80%;
+        margin: 1rem auto;
+        padding: 2% 5%;
+    }
+}
+
+@media (min-width: 992px) {
+    #cb-cookie-banner .cb-cookie-icon {
+        font-size: 50px;
+        display: block;
+    }
+
+    /* GENERAL SETTINGS */
+    header .dropdown-item:focus,
+    .dropdown-item:hover {
+        background-color: #FF6C26;
+        transform: skew(0deg);
+        box-shadow: 0px 0px 1px #FF6C26;
+    }
+
+    header .dropdown-item:focus p,
+    .dropdown-item:hover p {
+        color: var(--white);
+        background-color: #FF6C26;
+        transform: skew(0deg);
+    }
+
+    header .dropdown-item p {
+        margin-bottom: 0;
+        text-shadow: 0 0 black;
+    }
+
+    header .dropdown-item p {
+        color: #000000b8;
+        margin-bottom: 0;
+        transform: skew(10deg) scale3d(1, 1, 1);
+    }
+
+    header .rh-logo-box {
+        padding: 0 0;
+        background: #eee;
+    }
+
+    header .rh-navbar-collapse {
+        margin-top: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        left: -35%;
+        transform: skew(-10deg);
+        border-radius: 0;
+        z-index: -1;
+        margin-top: 15px;
+        border-radius: 0px 0px 1px 1px;
+    }
+
+
+
+}
+
+/* MAX */
+@media (max-width: 991px) {
+
+    /* HEADER */
+    header .rh-logo-box {
+        padding: 15px 0 0;
+        background: #ff6c26;
+        box-shadow: 1px -17px 0px -14px #ff5000 inset;
+    }
+
+    header .rh-logo img {
+        width: 55px;
+        position: relative;
+        left: 20px;
+        top: 0px;
+    }
+
+    header .dropdown-menu.show {
+        width: 95%;
+    }
+
+    header .navbar-toggler:focus {
+        box-shadow: 0px 0px 0px 3px #FF5000;
+    }
 }
