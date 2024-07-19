@@ -725,8 +725,7 @@ section#sectionFourCards .carousel-control-prev-icon {
     display: table-cell;
     overflow: hidden;
     white-space: nowrap;
-    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHI4ZzAyeHg2ZmE3dnZra3Eyb3lwcGlkNmptYXNuMTlobTlxYXpwdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TlK63ETH1WVZm79Phni/giphy.webp
-);
+    background-image: url('../img/bg-text.webp');
     filter: brightness(1.5);
     background-size: contain;
     background-position: center;
@@ -791,8 +790,7 @@ section#sectionFourCards .carousel-control-prev-icon {
     display: table-cell;
     overflow: hidden;
     white-space: nowrap;
-    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHI4ZzAyeHg2ZmE3dnZra3Eyb3lwcGlkNmptYXNuMTlobTlxYXpwdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TlK63ETH1WVZm79Phni/giphy.webp
-);
+    background-image: url('../img/bg-text.webp');
     filter: brightness(1.5);
     background-size: contain;
     background-position: center;
@@ -853,8 +851,7 @@ section#sectionFourCards .carousel-control-prev-icon {
     display: table-cell;
     overflow: hidden;
     white-space: nowrap;
-    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHI4ZzAyeHg2ZmE3dnZra3Eyb3lwcGlkNmptYXNuMTlobTlxYXpwdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TlK63ETH1WVZm79Phni/giphy.webp
-);
+    background-image: url('../img/bg-text.webp');
     filter: brightness(1.5);
     background-size: contain;
     background-position: center;
@@ -1195,7 +1192,7 @@ section#sectionFourCards .carousel-control-prev-icon {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+    background-image: url('../img/bg-rh-que-somos.avif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1211,13 +1208,13 @@ section#sectionFourCards .carousel-control-prev-icon {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(https://www.medicalindependent.ie/wp-content/uploads/2021/02/MI03-Dorsal-2048x1365.jpg);
+    background-image: url('../img/rh-que-hacemos.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 #rh-about #rh-description {
-    padding: 0 0 10vh;
+    padding: 5vh 0 10vh;
 }
 
 #rh-about #rh-description span {
@@ -1238,7 +1235,7 @@ section#sectionFourCards .carousel-control-prev-icon {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(https://images8.alphacoders.com/134/thumb-1920-1346363.png);
+    background-image: url('../img/rh-la-esfera.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1266,6 +1263,7 @@ section#sectionFourCards .carousel-control-prev-icon {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 #rh-about .team-gallery .border {
@@ -1282,9 +1280,7 @@ section#sectionFourCards .carousel-control-prev-icon {
 }
 
 #rh-about .team-gallery .card {
-    height: 379px;
-    width: 300px;
-    background: #808080;
+    min-width: 250px;
     border-radius: 10px;
     transition: background 0.8s;
     overflow: hidden;
@@ -1294,60 +1290,74 @@ section#sectionFourCards .carousel-control-prev-icon {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin: 0 auto 2vh;
 }
-
+#rh-about .team-gallery .card:hover {
+    text-shadow: 0 0 4px #070707;
+}
 #rh-about .team-gallery .card0 {
-    background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") center center no-repeat;
-    background-size: 300px;
+    background: url("../img/esfera/borja.png") center center no-repeat;
+    background-size: 400px;
 }
 
 #rh-about .team-gallery .card0:hover {
-    background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") left center no-repeat;
+    background: url("../img/esfera/borja.png") center top no-repeat;
     background-size: 600px;
+    filter: grayscale(1);
 }
 
-#rh-about .team-gallery .card0:hover h2 {
-    opacity: 1;
-}
-
-#rh-about .team-gallery .card0:hover .fa {
-    opacity: 1;
-}
 
 #rh-about .team-gallery .card1 {
-    background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") center center no-repeat;
-    background-size: 300px;
+    background: url("../img/esfera/sergio.png") center center no-repeat;
+    background-size: 400px;
 }
 
 #rh-about .team-gallery .card1:hover {
-    background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") left center no-repeat;
-    background-size: 600px;
-}
-
-#rh-about .team-gallery .card1:hover h2 {
-    opacity: 1;
-}
-
-#rh-about .team-gallery .card1:hover .fa {
-    opacity: 1;
+    background: url("../img/esfera/sergio.png") center top no-repeat;
+    background-size: 500px;
+    filter: grayscale(1);
 }
 
 #rh-about .team-gallery .card2 {
-    background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
-    background-size: 300px;
+    background: url("../img/esfera/marta.png") center center no-repeat;
+    background-size: 400px;
 }
 
 #rh-about .team-gallery .card2:hover {
-    background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
+    background: url("../img/esfera/marta.png") center top no-repeat;
     background-size: 600px;
+    filter: grayscale(1);
+}
+#rh-about .team-gallery .card3 {
+    background: url("../img/esfera/xuso.png") center center no-repeat;
+    background-size: 400px;
 }
 
-#rh-about .team-gallery .card2:hover h2 {
-    opacity: 1;
+#rh-about .team-gallery .card3:hover {
+    background: url("../img/esfera/xuso.png") center 30% no-repeat;
+    background-size: 1000px;
+    filter: grayscale(1);
 }
 
-#rh-about .team-gallery .card2:hover .fa {
-    opacity: 1;
+#rh-about .team-gallery .card4 {
+    background: url("../img/esfera/eloy.png") center center no-repeat;
+    background-size: 375px;
+}
+
+#rh-about .team-gallery .card4:hover {
+    background: url("../img/esfera/eloy.png") 30% bottom no-repeat;
+    background-size: 600px;
+    filter: grayscale(1);
+}
+#rh-about .team-gallery .card5 {
+    background: url("../img/esfera/angel.png") center center no-repeat;
+    background-size: 400px;
+}
+
+#rh-about .team-gallery .card5:hover {
+    background: url("../img/esfera/angel.png") center top no-repeat;
+    background-size: 700px;
+    filter: grayscale(1);
 }
 
 #rh-about .team-gallery h2 {
@@ -1358,6 +1368,13 @@ section#sectionFourCards .carousel-control-prev-icon {
     transition: opacity 1s;
 }
 
+#rh-about .team-gallery .card:hover h2 {
+    opacity: 1;
+}
+
+#rh-about .team-gallery .card:hover .fa {
+    opacity: 1;
+}
 #rh-about .team-gallery .fa {
     opacity: 0;
     transition: opacity 1s;
@@ -1369,6 +1386,7 @@ section#sectionFourCards .carousel-control-prev-icon {
     position: absolute;
     color: var(--white);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: larger;
 }
 
 #rh-about .team-gallery .icons {
@@ -1551,8 +1569,7 @@ section#sectionFourCards .carousel-control-prev-icon {
     display: table-cell;
     overflow: hidden;
     white-space: nowrap;
-    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHI4ZzAyeHg2ZmE3dnZra3Eyb3lwcGlkNmptYXNuMTlobTlxYXpwdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TlK63ETH1WVZm79Phni/giphy.webp
-);
+    background-image: url('../img/bg-text.webp');
     filter: brightness(1.5);
     background-size: contain;
     background-position: center;
