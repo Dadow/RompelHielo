@@ -1,0 +1,373 @@
+
+
+#rh-events span.text-with-bg {
+    background: #ffffffad;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 2% 5%;
+}
+
+#rh-events #rh-que-somos {
+    padding-top: 230px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/bg-rh-que-somos.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#rh-events section:nth-child(3) {
+    position: relative;
+}
+
+#rh-events #rh-takitaki {
+    padding-top: 10%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/eventos/events01.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#rh-events #rh-animada {
+    padding-top: 10%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/eventos/events02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#rh-events #rh-cazadores {
+    padding-top: 10%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/eventos/events03.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#rh-events #rh-gameshakers {
+    padding-top: 10%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/eventos/events04.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#rh-events #rh-camelot {
+    padding-top: 10%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/eventos/events05.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+#rh-events #rh-la-esfera {
+    padding-top: 10%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/rh-la-esfera.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#rh-events #rh-la-esfera .accordion {
+    --bs-accordion-bg: #ffffff8a;
+}
+
+#rh-events #rh-la-esfera .accordion-button {}
+
+#rh-events h1:first-of-type {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    z-index: 2;
+    width: 300px;
+    color: white;
+    font-size: xxx-large;
+}
+
+
+
+#rh-events .team-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#rh-events .team-gallery .border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+#rh-events .team-gallery .border:hover {
+    border: 1px solid #fff;
+}
+
+#rh-events .team-gallery .card {
+    min-width: 250px;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto 2vh;
+}
+
+#rh-events .team-gallery .card:hover {
+    text-shadow: 0 0 4px #070707;
+}
+
+#rh-events .team-gallery .card0 {
+    background: url("../img/esfera/borja.png") center center no-repeat;
+    background-size: 400px;
+}
+
+#rh-events .team-gallery .card0:hover {
+    background: url("../img/esfera/borja.png") center top no-repeat;
+    background-size: 600px;
+    filter: grayscale(1);
+}
+
+
+#rh-events .team-gallery .card1 {
+    background: url("../img/esfera/sergio.png") center center no-repeat;
+    background-size: 400px;
+}
+
+#rh-events .team-gallery .card1:hover {
+    background: url("../img/esfera/sergio.png") center top no-repeat;
+    background-size: 500px;
+    filter: grayscale(1);
+}
+
+#rh-events .team-gallery .card2 {
+    background: url("../img/esfera/marta.png") center center no-repeat;
+    background-size: 400px;
+}
+
+#rh-events .team-gallery .card2:hover {
+    background: url("../img/esfera/marta.png") center top no-repeat;
+    background-size: 600px;
+    filter: grayscale(1);
+}
+
+#rh-events .team-gallery .card3 {
+    background: url("../img/esfera/xuso.png") center center no-repeat;
+    background-size: 400px;
+}
+
+#rh-events .team-gallery .card3:hover {
+    background: url("../img/esfera/xuso.png") center 30% no-repeat;
+    background-size: 1000px;
+    filter: grayscale(1);
+}
+
+#rh-events .team-gallery .card4 {
+    background: url("../img/esfera/eloy.png") center center no-repeat;
+    background-size: 375px;
+}
+
+#rh-events .team-gallery .card4:hover {
+    background: url("../img/esfera/eloy.png") 30% bottom no-repeat;
+    background-size: 600px;
+    filter: grayscale(1);
+}
+
+#rh-events .team-gallery .card5 {
+    background: url("../img/esfera/angel.png") center center no-repeat;
+    background-size: 400px;
+}
+
+#rh-events .team-gallery .card6:hover {
+    background: url("../img/esfera/ximo.png") center top no-repeat;
+    background-size: 700px;
+    filter: grayscale(1);
+}
+
+#rh-events .team-gallery .card6 {
+    background: url("../img/esfera/ximo.png") center top no-repeat;
+    background-size: 400px;
+}
+
+#rh-events .team-gallery .card7:hover {
+    background: url("../img/esfera/luis.png") right top no-repeat;
+    background-size: 700px;
+    filter: grayscale(1);
+}
+
+#rh-events .team-gallery .card7 {
+    background: url("../img/esfera/luis.png") center top no-repeat;
+    background-size: 400px;
+}
+
+#rh-events .team-gallery .card8:hover {
+    background: url("../img/esfera/clara.png") center center no-repeat;
+    background-size: 700px;
+    filter: grayscale(1);
+}
+
+#rh-events .team-gallery .card8 {
+    background: url("../img/esfera/clara.png") center center no-repeat;
+    background-size: 400px;
+}
+
+#rh-events .team-gallery .card5:hover {
+    background: url("../img/esfera/angel.png") center top no-repeat;
+    background-size: 700px;
+    filter: grayscale(1);
+}
+
+#rh-events .team-gallery h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#rh-events .team-gallery .card:hover h2 {
+    opacity: 1;
+}
+
+#rh-events .team-gallery .card:hover .fa {
+    opacity: 1;
+}
+
+#rh-events .team-gallery .fa {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#rh-events .team-gallery .rh-team-title {
+    bottom: 10px;
+    left: 10%;
+    position: absolute;
+    color: var(--white);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 3vh;
+}
+
+#rh-events .team-gallery .icons {
+    position: absolute;
+    fill: var(--white);
+    color: var(--white);
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#rh-events section {
+    position: relative;
+    z-index: 3;
+}
+
+#rh-events .band_main {
+    margin-top: -186px;
+}
+
+#rh-events .band_container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(-5deg, white, white 50%, transparent 50%, transparent);
+}
+
+#rh-events .band_container .band_right {
+    transform: rotate(355deg);
+    background-color: #FF5722;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    position: relative;
+    top: 30%;
+    width: 103%;
+    left: -1%;
+    z-index: 100;
+}
+
+#rh-events .band_container .band_right .band_text_container {
+    animation: anim-band-right 65s infinite linear;
+    backface-visibility: hidden;
+    max-height: 100px;
+    height: 100px;
+    position: relative;
+    transform: rotate(355deg);
+    left: -2000px;
+}
+
+#rh-events .band_container .band_right .band_text_container span {
+    z-index: 55 !important;
+    font-size: 70px;
+    font-weight: 900;
+    margin-top: 20px;
+    display: table-cell;
+    overflow: hidden;
+    white-space: nowrap;
+    background-image: url('../img/bg-text.webp');
+    filter: brightness(1.5);
+    background-size: contain;
+    background-position: center;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif;
+
+}
+
+
+

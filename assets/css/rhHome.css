@@ -1,0 +1,214 @@
+
+/* whatever */
+.product-device {
+    position: absolute;
+    right: 5%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    transform: rotate(30deg);
+}
+
+.product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    /* background-color: rgba(255, 255, 255, .1); */
+    background: url("../img/wha_bg.jpeg");
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.product-device::after {
+    position: absolute;
+    top: 7px;
+    left: 11px;
+    content: "";
+    /* background-color: rgba(255, 255, 255, .1); */
+    background: url(../img/whatsapp-logo.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0px 0px 2px black);
+}
+
+.product-device-2::after {
+    position: absolute;
+    right: 11px;
+    content: "";
+    /* background-color: rgba(255, 255, 255, .1); */
+    background: url(../img/discord-logo.png);
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    bottom: 4px;
+    top: unset;
+    left: unset;
+}
+
+.product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+
+}
+
+.product-device-2::before {
+    background: url("../img/dc_bg.jpeg");
+    background-size: cover;
+    background-position-y: -60%;
+}
+
+
+
+/* rh-home */
+
+#rh-home #carouselExampleCaptions .carousel-inner {
+    height: 0;
+    padding-bottom: 86vh;
+    /* this sets carousel aspect ratio (4:1 here) */
+}
+
+#rh-home #carouselExampleCaptions .carousel-item {
+    position: absolute !important;
+    /* Bootstrap is insistent */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#rh-home #carouselExampleCaptions .carousel-item {
+    transition: transform 1s ease-in-out;
+}
+
+#rh-home #carouselExampleCaptions .carousel-fade .active.carousel-item-start,
+#rh-home #carouselExampleCaptions .carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 5s;
+}
+
+#rh-home #carouselExampleCaptions .carousel-item img {
+    height: 100%;
+    /* Bootstrap handles width already */
+    object-fit: cover;
+    /* or 'contain' if you want stretch instead of crop */
+}
+
+#rh-home #carouselExampleCaptions .carousel-control-prev-icon {
+    background-position-x: 40%;
+}
+
+#rh-home #carouselExampleCaptions .carousel-control-next-icon {
+    background-position-x: 60%;
+}
+
+#rh-home #carouselExampleCaptions .carousel-control-next-icon,
+#rh-home #carouselExampleCaptions .carousel-control-prev-icon {
+    background-color: var(--trueOrange);
+    height: 5vh;
+    padding: 20px;
+    border-radius: 15%;
+    background-size: 70% !important;
+}
+
+#rh-home #carouselExampleCaptions .carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 60px;
+    height: 6px;
+    border: none;
+    border-radius: 24px;
+}
+
+#rh-home #carouselExampleCaptions .carousel-indicators [data-bs-target] span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--orange);
+    border-radius: inherit;
+}
+
+#rh-home #rh-welcome-banner {
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    margin-top: -180px;
+    z-index: 997;
+    position: relative;
+
+}
+
+#rh-home #rh-welcome-banner div {
+    color: var(--white);
+}
+
+#rh-home #rh-welcome-banner>div>div:first-of-type {
+    margin-top: 5rem !important;
+}
+
+#rh-home #rh-welcome-banner a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1.3rem;
+    font-weight: 900;
+    background-image: linear-gradient(-45deg, transparent 10%, var(--orange) 10.5%, var(--orange) 90%, transparent 90.5%);
+    color: var(--white);
+    font-size: 1.3em;
+    font-style: italic;
+    margin-top: 1rem;
+    text-decoration: none;
+    position: relative;
+}
+
+#rh-home #rh-welcome-banner a:hover {
+    background-image: linear-gradient(-45deg, transparent 10%, var(--trueOrange) 10.5%, var(--trueOrange) 90%, transparent 90.5%);
+}
+
+#rh-home #rh-welcome-banner a::before {
+    content: '';
+    width: 102%;
+    height: 108%;
+    position: absolute;
+    background-image: linear-gradient(-45deg, transparent 10%, #737373 10.5%, #ffffff 90%, transparent 90.5%);
+    Z-INDEX: -1;
+    left: -2px;
+    top: -2px;
+}
+
+
+#rh-home #carouselExampleCaption2 .carousel-item img {
+    height: 15vh;
+    object-fit: fill;
+}
+
+#rh-home #carouselExampleCaption2 .carousel-indicators {
+    bottom: -50px;
+}
+
+#rh-home #carouselExampleCaption2 .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+#rh-home #rh-description {
+    padding: 10vh 0 5vh;
+}
+
+#rh-home #rh-description span {
+    font-weight: 600;
+    font-size: 2.5vh;
+    width: 75%;
+    padding: 5vh;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 5px 5px 25px -2px;
+}
