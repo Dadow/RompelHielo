@@ -1389,6 +1389,7 @@ section#sectionFourCards .carousel-control-prev-icon {
 }
 
 @media (min-width: 576px) {
+    
     #rh-home #rh-description span {
         font-weight: 300;
         font-size: 4vh;

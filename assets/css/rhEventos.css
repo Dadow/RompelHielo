@@ -1,11 +1,13 @@
 
 
+
 #rh-events span.text-with-bg {
     background: #ffffffad;
     width: 80%;
     margin: 1rem auto;
     padding: 2% 5%;
 }
+
 
 #rh-events #rh-que-somos {
     padding-top: 230px;
@@ -21,9 +23,6 @@
     background-attachment: fixed;
 }
 
-#rh-events section:nth-child(3) {
-    position: relative;
-}
 
 #rh-events #rh-takitaki {
     padding-top: 10%;
@@ -32,7 +31,6 @@
     z-index: 2;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     background-image: url('../img/eventos/events01.gif');
     background-size: cover;
     background-position: center;
@@ -43,22 +41,20 @@
     position: relative;
     width: 100%;
     z-index: 2;
+    order: 2;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     background-image: url('../img/eventos/events02.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 #rh-events #rh-cazadores {
     padding-top: 10%;
-    position: relative;
     width: 100%;
-    z-index: 2;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     background-image: url('../img/eventos/events03.webp');
     background-size: cover;
     background-position: center;
@@ -72,7 +68,6 @@
     z-index: 2;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     background-image: url('../img/eventos/events04.jpg');
     background-size: cover;
     background-position: center;
@@ -85,7 +80,6 @@
     z-index: 2;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     background-image: url('../img/eventos/events05.jpg');
     background-size: cover;
     background-position: center;
@@ -94,26 +88,6 @@
 
 
 
-
-#rh-events #rh-la-esfera {
-    padding-top: 10%;
-    position: relative;
-    width: 100%;
-    z-index: 2;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url('../img/rh-la-esfera.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-#rh-events #rh-la-esfera .accordion {
-    --bs-accordion-bg: #ffffff8a;
-}
-
-#rh-events #rh-la-esfera .accordion-button {}
 
 #rh-events h1:first-of-type {
     position: absolute;
@@ -125,7 +99,18 @@
     font-size: xxx-large;
 }
 
-
+#rh-events section:not(.rh-band) {
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 10%;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+}
 
 #rh-events .team-gallery {
     display: flex;
@@ -371,3 +356,17 @@
 
 
 
+
+@media (min-width: 992px) {
+    #rh-events section:not(.rh-band) {
+        flex-direction: row;
+    }
+    #rh-events span.text-with-bg {
+        width: 43%;
+        height: fit-content;
+        margin: 4% auto 5% !important;
+    }
+    #rh-events #rh-animada .text-with-bg, #rh-events #rh-gameshakers .text-with-bg{
+        order: 2;
+    }
+}

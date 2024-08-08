@@ -185,7 +185,7 @@
 
 #rh-home #carouselExampleCaption2 .carousel-item img {
     height: 15vh;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 #rh-home #carouselExampleCaption2 .carousel-indicators {

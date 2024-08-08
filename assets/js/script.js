@@ -46,3 +46,8 @@ function loadCarousel() {
 
 }
 
+setTimeout(() => {
+    console.clear();
+    console.log("%cHoli!", "color: red; font-size: 50px; font-weight: bold;");
+    console.log("%cNo sabemos que intentas hacer, pero hazlo :D", "color: white; font-size: 20px;");
+}, 500);
